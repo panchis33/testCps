@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-navbar style="height: 74px; background-color: rgb(240, 240, 72);">
+        <ion-label class="cotizador">Cotizador</ion-label>
+    </ion-navbar>
+   
+</ion-header>
+
+<ion-content>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div>
+            <ion-item no-lines>
+                <ion-label stacked text-wrap>
+                    <div>Región:</div>
+                </ion-label>
+                <ion-select id="Select" cancelText="Cancelar" okText="Aceptar" [(ngModel)]="regionSelected"
+                    (ngModelChange)="loadPais(regionSelected)" name="región" placeholder="Region" id="region" required>
+                    <ion-option id="{{'option' + i}}" *ngFor="let option of regiones; let i = index;"
+                        [value]="option.id">{{option.nombre}}
+                    </ion-option>
+                </ion-select>
+            </ion-item>
+        </div>
+
+        <div>
+            <ion-item no-lines>
+                <ion-label stacked text-wrap>
+                    <div>País:</div>
+                </ion-label>
+                <ion-select id="Select1" cancelText="Cancelar" okText="Aceptar" [(ngModel)]="paisSelected" name="pais"
+                    (ngModelChange)="loadTarifa(paisSelected)" placeholder="País" id="pais" required>
+                    <ion-option id="{{'option' + i}}" *ngFor="let option of paises; let i = index;" [value]="option.id">
+                        {{option.pais}}
+                    </ion-option>
+                </ion-select>
+            </ion-item>
+        </div>
+
+        <div>
+            <ion-item>
+                <ion-label text-wrap stacked>
+                    <div>
+                        Peso
+                    </div>
+                </ion-label>
+                <ion-input type="number" name="peso" [(ngModel)]="peso" required></ion-input>
+            </ion-item>
+        </div>
+
+        <div>
+            <ion-item>
+                <ion-label text-wrap stacked>
+                    <div>
+                        Alto
+                    </div>
+                </ion-label>
+                <ion-input type="number" name="alto" [(ngModel)]="alto" required></ion-input>
+            </ion-item>
+        </div>
+        <div>
+            <ion-item>
+                <ion-label text-wrap stacked>
+                    <div>
+                        Ancho
+                    </div>
+                </ion-label>
+                <ion-input type="number" name="anchi" [(ngModel)]="ancho" required></ion-input>
+            </ion-item>
+        </div>
+
+        <div>
+            <ion-item>
+                <ion-label text-wrap stacked>
+                    <div>
+                        largo
+                    </div>
+                </ion-label>
+                <ion-input type="number" name="largo" [(ngModel)]="largo" required></ion-input>
+            </ion-item>
+        </div>
+        <div>
+            <ion-item>
+                <ion-label text-wrap stacked>
+                    <div>
+                        Aplica descuento
+                    </div>
+                </ion-label>
+                <ion-input type="number" name="descuento" [(ngModel)]="descuento" required></ion-input>
+            </ion-item>
+        </div>
+        <button id="btnEntrada" ion-item class="test-button item-md" [disabled]="!f.valid ">
+            
+            <ion-label>
+              <h1>Aceptar</h1>
+            </ion-label>
+          </button>
+
+    </form>
+</ion-content>
