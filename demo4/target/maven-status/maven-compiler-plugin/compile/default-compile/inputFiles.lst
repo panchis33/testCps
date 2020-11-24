@@ -1,0 +1,12 @@
+D:\Windows\test\demo4\src\main\java\com\example\demo4\controller\RegionController.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\Demo4Application.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\Service\impl\RegionServiceImpl.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\controller\TarifaController.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\model\Pais.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\repository\DaoTarifa.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\repository\DaoPais.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\repository\DaoRegion.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\Service\RegionService.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\controller\PaisController.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\model\Region.java
+D:\Windows\test\demo4\src\main\java\com\example\demo4\model\Tarifa.java

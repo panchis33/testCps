@@ -1,0 +1,6 @@
+com\example\demo4\Demo4Application.class
+com\example\demo4\model\Region.class
+com\example\demo4\Service\RegionService.class
+com\example\demo4\repository\DaoRegion.class
+com\example\demo4\Service\impl\RegionServiceImpl.class
+com\example\demo4\controller\RegionController.class
